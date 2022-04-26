@@ -15,7 +15,7 @@
         class Calculadora extends React.Component {
             constructor(props) {
                 super(props);
-                this.state = {primeiroNumero: "", segundoNumero: "", resultado: "", operacao: ""}
+                this.state = {primeiroNumero: "", segundoNumero: "", resultado: ""}
             }
             render() {
                 return(
@@ -46,7 +46,6 @@
                 else {
                     var calculo = eval(valor1 + operador + valor2);
                     this.setState({resultado:calculo});
-                    console.log(calculo);
                 }   
             }
         }
